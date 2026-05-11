@@ -27,6 +27,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -361,6 +363,10 @@ h4 {
   height: 100%;
   object-fit: cover;
   object-position: 58% center;
+}
+
+.about-portrait-photo {
+  object-position: 68% 42%;
 }
 
 .profile-card-body {
@@ -1384,7 +1390,207 @@ footer {
 
 @media (max-width: 720px) {
   body {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .brand strong {
+    font-size: 14px;
+  }
+
+  .brand small {
+    font-size: 11px;
+  }
+
+  nav {
+    font-size: 13px;
+  }
+
+  .nav-cta {
+    font-size: 13px;
+  }
+
+  .eyebrow {
+    font-size: clamp(14px, 3.6vw, 17px);
+  }
+
+  .card-kicker {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: clamp(26px, 6.8vw, 34px);
+    line-height: 1.08;
+  }
+
+  h2 {
+    font-size: clamp(20px, 5.4vw, 28px);
+    line-height: 1.15;
+  }
+
+  .lead {
+    font-size: clamp(14px, 3.8vw, 16px);
+    line-height: 1.65;
+  }
+
+  .button {
+    font-size: 14px;
+    min-height: 44px;
+  }
+
+  .trust-strip span {
+    font-size: 12px;
+    min-height: 34px;
+    padding: 6px 10px;
+  }
+
+  .profile-card-body h2 {
+    font-size: clamp(20px, 5vw, 26px);
+  }
+
+  .mini-tags span {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+
+  .section-heading p:not(.eyebrow) {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .topic-grid .topic-tile-head {
     font-size: 15px;
+    padding: 18px;
+    min-height: 60px;
+  }
+
+  .topic-tile-body {
+    padding: 0 18px 18px;
+  }
+
+  .topic-tile-body p {
+    font-size: 14px;
+  }
+
+  button.text-link.topic-footer-booking,
+  .text-link {
+    font-size: 14px;
+  }
+
+  .steps article p,
+  .service-card p,
+  .specialty-grid p,
+  .pricing-grid p,
+  .about p,
+  .philosophy-copy,
+  .life-grid p,
+  .faq p,
+  .contact p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .service-icon {
+    font-size: 12px;
+    min-width: 48px;
+    height: 36px;
+    margin-bottom: 18px;
+  }
+
+  .pricing-grid strong {
+    font-size: 19px;
+  }
+
+  .credential-summary {
+    font-size: 17px;
+    padding: 16px 18px;
+  }
+
+  .credential-summary::after {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .credential-line,
+  .credential-line-cont {
+    font-size: 14px;
+  }
+
+  .safety-note {
+    font-size: 13px;
+    padding: 14px 16px;
+  }
+
+  .philosophy-copy {
+    font-size: 15px;
+  }
+
+  .faq summary {
+    font-size: 15px;
+    padding: 16px 0;
+  }
+
+  .faq summary::after {
+    font-size: 20px;
+  }
+
+  .contact-intro-note {
+    font-size: 13px;
+  }
+
+  .contact-cta-card h3 {
+    font-size: 18px;
+  }
+
+  .contact-cta-card > p {
+    font-size: 14px;
+  }
+
+  .booking-card h3,
+  .expect-panel > h3 {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+
+  .booking-sub {
+    font-size: 14px;
+  }
+
+  .expect-panel > .expect-en {
+    font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+  }
+
+  .expect-list-copy strong {
+    font-size: 15px;
+  }
+
+  .expect-list-copy p {
+    font-size: 14px;
+  }
+
+  .celebration-title {
+    font-size: clamp(18px, 4.5vw, 24px);
+  }
+
+  .celebration-sub {
+    font-size: 14px;
+  }
+
+  .booking-send-note,
+  .booking-form-error {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 13px;
   }
 
   .site-header {
@@ -1422,14 +1628,6 @@ footer {
 
   .hero {
     padding-top: 38px;
-  }
-
-  h1 {
-    font-size: clamp(38px, 12vw, 54px);
-  }
-
-  h2 {
-    font-size: clamp(28px, 9vw, 38px);
   }
 
   .hero-actions,
